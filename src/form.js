@@ -9,62 +9,23 @@ form.addEventListener('submit', event => {
     }
 });
 
-// First name field validation
 const fName = document.getElementById('fname');
 const fNameError = document.querySelector('.first-name .error');
 const fNameErrorImg = document.querySelector('.first-name .wrapper-errorimg');
 
-fName.addEventListener('input', () => {
-    if (fName.validity.valid) {
-        fNameError.textContent = '';
-        fNameError.classList.toggle('active', false);
-        fNameErrorImg.classList.toggle('active', false);
-        fName.classList.toggle('active', false);
-    }
-});
-
-// Last name field validation
 const lName = document.getElementById('lname');
 const lNameError = document.querySelector('.last-name .error');
 const lNameErrorImg = document.querySelector('.last-name .wrapper-errorimg');
 
-lName.addEventListener('input', () => {
-    if (lName.validity.valid) {
-        lNameError.textContent = '';
-        lNameError.classList.toggle('active', false);
-        lNameErrorImg.classList.toggle('active', false);
-        lName.classList.toggle('active', false);
-    }
-});
 
-// Email field validation
 const email = document.getElementById('email');
 const emailError = document.querySelector('.email .error');
 const emailErrorImg = document.querySelector('.email .wrapper-errorimg');
 
-email.addEventListener('input', () => {
-    if (email.validity.valid) {
-        emailError.textContent = '';
-        emailError.classList.toggle('active', false);
-        emailErrorImg.classList.toggle('active', false);
-        email.classList.toggle('active', false);
-    }
-});
 
-
-// Password field validation
 const password = document.getElementById('password');
 const passwordError = document.querySelector('.password .error');
 const passwordErrorImg = document.querySelector('.password .wrapper-errorimg');
-
-password.addEventListener('input', () => {
-    if (password.validity.valid) {
-        passwordError.textContent = '';
-        passwordError.classList.toggle('active', false);
-        passwordErrorImg.classList.toggle('active', false);
-        password.classList.toggle('active', false);
-    }
-});
 
 function showError() {
 
@@ -100,8 +61,6 @@ function showError() {
     if (!password.validity.valid) {
         if (password.validity.valueMissing) {
             passwordError.textContent = 'Password cannot be empty';
-        } else if (password.validity.tooShort) {
-            passwordError.textContent = `Password should be at least ${password.minLength} characters`;
         }
         passwordError.classList.toggle('active', true);
         passwordErrorImg.classList.toggle('active', true);

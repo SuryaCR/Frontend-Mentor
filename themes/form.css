@@ -1,31 +1,6 @@
-/* || General style rules */
 
 *, *::after, *::before {
     box-sizing: border-box;
-}
-  
-/* This as the class implies hide the lement visually */
-.hide-visually {
-    font-size: 0;
-    width: 1px;
-    height: 1px;
-    display: inline-block;
-    overflow: hidden;
-    position: absolute!important;
-    border: 0!important;
-    padding: 0!important;
-    margin: 0!important;
-    clip: rect(1px,1px,1px,1px);
-}
-
-/* || Typography */
-
-h1 {
-    color: hsl(0, 100%, 74%) ; /* Red */
-    color: hsl(154, 59%, 51%); /* Green */
-    color: hsl(248, 32%, 49%); /* Blue */
-    color: hsl(249, 10%, 26%); /* Dark Blue */
-    color: hsl(246, 25%, 77%); /* Grayish Blue */
 }
 
 body {
@@ -36,7 +11,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     background: url(../images/bg-intro-mobile.png) left top, 
-    /* background: fixed url(../images/bg-intro-mobile.png) center top / 100% auto no-repeat,  */
     hsl(0, 100%, 74%);
 }
 
@@ -108,7 +82,6 @@ body {
     transition: border-bottom 0.2s;
 }
 
-/* || Layout */
 
 html {
     height: 100%;
@@ -126,12 +99,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-footer {
-    flex: 0;
-}
-
-/* || Section signup */
 
 .section-signup {
     margin: 9.5em auto 6.5em;
@@ -229,8 +196,6 @@ footer {
     opacity: 65%;
 }
 
-/* || Footer */
-
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -240,58 +205,6 @@ footer {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 48.0625em) {
-    
-    /* || Typography */
-    
-    .section-signup h2 {
-        text-align: initial;
-    }
-
-    .section-signup .wrapper-desc p {
-        text-align: initial;
-    }
-    /* || Secton signup */
-    
-    .section-signup {
-        max-width: 111em;        
-        display: flex;
-        align-items: center;
-    }
-
-    .section-signup .wrapper-desc, 
-    .section-signup .wrapper-signup {
-        flex: 1 1 47%;
-    }
-
-    .section-signup .wrapper-desc {
-        margin-right: 6%;
-    }
-
-    .section-signup .wrapper-offer {
-        margin-top: 0;
-    }
-
-}
 
 
-@media screen and (min-width: 62em) {
-    
-    /* || Typography */
-    
-    .section-signup h2 {
-        font-size: 3.125rem;
-        margin: 0.6em 0;
-        line-height: 1.2;
-    }
 
-    /* || Section signup */
-
-    .section-signup form {
-        padding: 4em;
-    }
-        
-    .section-signup form li + li {
-        margin-top: 2em;
-    }
-}

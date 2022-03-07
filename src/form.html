@@ -14,14 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../themes/form.css">
-
-  <script src="./form.js" defer></script>
-
 </head>
 
 <body>
   <main>
-    <h1 class="hide-visually">Frontend Mentor - Intro component with sign up form solution</h1>
 
     <div class="section-signup">
       <div class="wrapper-desc">
@@ -36,30 +32,30 @@
           <span><b>Try it free 7 days</b> then $20/mo. thereafter</span>
         </div>
 
-        <form>
+        <form method="post">
           <ul>
             <li class="first-name">
               <input type="text" name="first_name" id="fname" placeholder="First Name" required>
               <span class="error" aria-live="polite"></span>
-              <div class="wrapper-errorimg"><img src="images/icon-error.svg" alt="Icon error"></div>
+              <div class="wrapper-errorimg"><img src="../images/icon-error.svg" alt="Icon error"></div>
             </li>
 
             <li class="last-name">
               <input type="text" name="last_name" id="lname" placeholder="Last Name" required>
               <span class="error" aria-live="polite"></span>
-              <div class="wrapper-errorimg"><img src="images/icon-error.svg" alt="Icon error"></div>
+              <div class="wrapper-errorimg"><img src="../images/icon-error.svg" alt="Icon error"></div>
             </li>
 
             <li class="email">
               <input type="email" name="email" id="email" placeholder="Email Address" required>
               <span class="error" aria-live="polite"></span>
-              <div class="wrapper-errorimg"><img src="images/icon-error.svg" alt="Icon error"></div>
+              <div class="wrapper-errorimg"><img src="../images/icon-error.svg" alt="Icon error"></div>
             </li>
 
             <li class="password">
               <input type="password" name="password" id="password" placeholder="Password" required minlength="8">
               <span class="error" aria-live="polite"></span>
-              <div class="wrapper-errorimg"><img src="images/icon-error.svg" alt="Icon error"></div>
+              <div class="wrapper-errorimg"><img src="../images/icon-error.svg" alt="Icon error"></div>
             </li>
 
             <li class="button">
@@ -72,6 +68,7 @@
       </div>
     </div>
   </main>
+  <script src="./form.js"></script>
 
 </body>
 
