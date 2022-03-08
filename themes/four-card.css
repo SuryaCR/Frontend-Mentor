@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+  background-color:hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.header,
+.header-paragraph {
+    text-align: center;
+}
+
+.header {
+    color: hsl(234, 12%, 34%);
+}
+
+.header-paragraph {
+    inline-size: 30em;
+    margin-left: 32.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 200;
+    padding-top: 2em;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+p {
+    color:hsl(229, 6%, 66%);
+    font-weight: 200;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5em;
+}
+
+.card {
+    width: 350px;
+    height: 275px;
+}
+
+.card-title {
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.card-text {
+    line-height: 1.5;
+}
+
+.card-title,
+.card-text {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.supervisor-card,
+.team-builder-card,
+.karma-card,
+.calculator-card {
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px hsl(229, 6%, 66%);
+    margin-right: 100px;
+}
+
+.supervisor-card {
+    border-top: 3px solid hsl(180, 62%, 55%);
+    margin-right: 850px;
+    margin-top: 13em;
+}
+
+.team-builder-card {
+    border-top: 3px solid hsl(0, 78%, 62%);
+    margin-top: -32em;
+}
+
+.karma-card {
+    border-top: 3px solid hsl(34, 97%, 64%);
+    margin-top: -13em;
+}
+
+.calculator-card {
+    border-top: 3px solid hsl(212, 86%, 64%);
+    margin-left: 750px;
+    margin-top: -430px;
+}
+
+.supervisor-img,
+.team-builder-img,
+.karma-img,
+.calculator-img {
+    padding: 4em 0 0em 15em;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
