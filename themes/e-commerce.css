@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700");
+
+@media screen and (max-width: 1440px){
+* {
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+html {
+  font-family: "Kumbh Sans";
+  margin-top: 20px;
+}
+
+#navi {
+  margin-left: 300px;
+}
+#as {
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -70px;
+}
+#top_image {
+  float: right;
+  margin-top: -55px;
+}
+#avatar {
+  height: 35px;
+  width: 35px;
+}
+#image_section {
+  margin-top: 50px;
+}
+#first_image {
+  padding: 20px;
+  border-radius: 30px;
+  height: 400px;
+  width: 500px;
+}
+#details_section {
+  float: right;
+  margin-left: 700px;
+  margin-top: -400px;
+}
+#h {
+  color: hsl(25, 93%, 63%);
+}
+#hh {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#p1 {
+  color: hsl(219, 9%, 45%);
+}
+#p2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+#discount {
+  color: hsl(25, 100%, 51%);
+  font-size: 15px;
+  background-color: hsl(25, 94%, 81%);
+  border-radius: 3px;
+}
+#p3 {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: hsl(219, 9%, 45%);
+  font-weight: bolder;
+}
+#input1 {
+  border: transparent;
+  background-color: hsl(223, 64%, 98%);
+  width: 30px;
+  height: 20px;
+  font-weight: bolder;
+  font-size: 16px;
+  text-align: center;
+}
+#btn {
+  border: transparent;
+  box-sizing: content-box;
+  border-radius: 10px;
+  height: 45px;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: hsl(25, 100%, 51%);
+  color: white;
+}
+.image_section2 {
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  margin-left: 30px;
+}
+}
