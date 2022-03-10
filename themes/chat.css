@@ -8,27 +8,18 @@ body {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Rubik", sans-serif;
-  max-width: 1440px;
   background-color: hsl(270, 20%, 96%);
   overflow-x: hidden;
 }
 
 .parent {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
   position: relative;
 }
 .round-box {
   height: 100%;
   width: 240%;
-  border-radius: 0 0 100% 100%;
-  background: rgb(136, 56, 255);
-  background: linear-gradient(
-    217deg,
-    rgba(233, 66, 255, 0.9) 10%,
-    rgba(136, 56, 255, 1) 40%
-  );
-  margin-left: -60%;
+   margin-left: -60%;
 }
 .container {
   display: flex;
@@ -54,7 +45,7 @@ body {
 .phone {
   font-size: 0.7rem;
   border: 10px solid white;
-  background-color: hsl(270, 20%, 96%);
+  background-color: white;
   border-radius: 40px;
   justify-content: center;
   display: grid;
@@ -63,14 +54,9 @@ body {
   row-gap: 10px;
   column-gap: 3px;
   position: relative;
-  box-shadow: -2px 2px 74px 12px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: -2px 2px 74px 12px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: -2px 2px 74px 12px rgba(0, 0, 0, 0.3);
-  
   justify-content: space-around;
 }
 .name {
-  grid-column: 1 / 13;
   height: 45px;
   border-radius: 33px 33px 5px 5px;
   padding-top: 15px;
@@ -78,11 +64,6 @@ body {
   align-items: center;
   justify-content: space-around;
   background: rgb(136, 56, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(136, 56, 255, 1) 20%,
-    rgba(233, 66, 255, 1) 92%
-  );
 }
 .whitebox {
   height: 20px;
@@ -95,6 +76,7 @@ body {
 .top-text {
   position: absolute;
   left: 68px;
+  color: black;
 }
 .top-svg {
   position: absolute;
@@ -111,16 +93,13 @@ body {
 .chat-face {
   height: 100%;
   width: 100%;
-  object-fit: contain;
   border: 2px solid white;
 }
 .text-name {
   font-weight: bold;
-  color: white;
 }
 .text-available {
   font-size: x-small;
-  color: white;
 }
 .menubutton {
   position: absolute;
@@ -135,7 +114,6 @@ body {
   background-color: rgb(237, 228, 245);
   padding-left: 5px;
   border-radius: 10px 10px 10px 4px;
-
   margin-left: 10px;
   margin-top: 15px;
   margin: 10px 0 -4px 10px;

@@ -16,6 +16,7 @@
     text-align: center;
     padding: 0;
     margin: 0;
+
   }
   
   header {
@@ -52,12 +53,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .flex > * {
-    flex: 1;
-    padding: 10px;
   }
   
   .split {
