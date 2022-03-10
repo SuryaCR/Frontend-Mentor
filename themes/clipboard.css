@@ -1,8 +1,8 @@
 :root {
-    --strong-cyan: hsl(171, 66%, 44%);
-    --light-blue: hsl(233, 100%, 69%);
     --dark-grayish-blue: hsl(210, 10%, 33%);
     --grayish-blue: hsl(201, 11%, 66%);
+    --light-blue: hsl(233, 100%, 69%);
+    --strong-cyan: hsl(171, 66%, 44%);
   }
   
   * {
@@ -13,9 +13,9 @@
     color: var(--dark-grayish-blue);
     font-family: "Bai Jamjuree", sans-serif;
     font-size: 18px;
-    text-align: center;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    text-align: center;
 
   }
   
@@ -32,8 +32,8 @@
   
   p {
     color: var(--grayish-blue);
-    line-height: 1.5;
     font-size: 16px;
+    line-height: 1.5;
   }
   
   .container {
@@ -50,15 +50,15 @@
   }
   
   .flex {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
   }
   
   .split {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
   }
   
   .split p {
@@ -119,8 +119,8 @@
   footer ul {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     list-style-type: none;
+    padding: 0;
   }
   
   footer .links {

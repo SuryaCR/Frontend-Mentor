@@ -4,12 +4,13 @@
   margin-left: 0;
 }
 body {
-  display: block;
   box-sizing: border-box;
+  background-color: hsl(270, 20%, 96%);
+  display: block;
   font-size: 16px;
   font-family: "Rubik", sans-serif;
-  background-color: hsl(270, 20%, 96%);
   overflow-x: hidden;
+
 }
 
 .parent {
@@ -18,15 +19,15 @@ body {
 }
 .round-box {
   height: 100%;
+  margin-left: -60%;
   width: 240%;
-   margin-left: -60%;
 }
 .container {
   display: flex;
+  gap: 13vh;
+  justify-content: space-around;
   margin-top: 15vh;
   z-index: 1;
-  justify-content: space-around;
-  gap: 13vh;
 }
 
 .right {
@@ -43,57 +44,57 @@ body {
   margin-left: 9%;
 }
 .phone {
-  font-size: 0.7rem;
   border: 10px solid white;
   background-color: white;
   border-radius: 40px;
-  justify-content: center;
+  column-gap: 3px;
   display: grid;
+  font-size: 0.7rem;
   grid-template-rows: repeat(10, 45px);
   grid-template-columns: repeat(12, 21px);
-  row-gap: 10px;
-  column-gap: 3px;
-  position: relative;
+  justify-content: center;
   justify-content: space-around;
+  row-gap: 10px;
+  position: relative;
 }
 .name {
-  height: 45px;
-  border-radius: 33px 33px 5px 5px;
-  padding-top: 15px;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  border-radius: 33px 33px 5px 5px;
   background: rgb(136, 56, 255);
+  display: flex;
+  height: 45px;
+  justify-content: space-around;
+  padding-top: 15px;
 }
 .whitebox {
-  height: 20px;
-  width: 170px;
   background-color: white;
-  position: absolute;
   border-radius: 0px 0px 15px 15px;
+  height: 20px;
+  position: absolute;
   right: 51px;
+  width: 170px;
 }
 .top-text {
-  position: absolute;
-  left: 68px;
   color: black;
+  left: 68px;
+  position: absolute;
 }
 .top-svg {
-  position: absolute;
-  left: 11px;
   color: white;
+  left: 11px;
+  position: absolute;
 }
 .top-image {
   height: 23px;
-  width: 23px;
-  position: absolute;
   left: 29px;
+  position: absolute;
   top: 22px;
+  width: 23px;
 }
 .chat-face {
+  border: 2px solid white;
   height: 100%;
   width: 100%;
-  border: 2px solid white;
 }
 .text-name {
   font-weight: bold;
@@ -102,80 +103,77 @@ body {
   font-size: x-small;
 }
 .menubutton {
+  color: white;
   position: absolute;
   right: 17px;
-  color: white;
 }
 .first-text {
-  grid-column: 1 / 8;
-  color: hsl(276, 55%, 52%);
-  display: flex;
   align-items: center;
   background-color: rgb(237, 228, 245);
-  padding-left: 5px;
   border-radius: 10px 10px 10px 4px;
+  color: hsl(276, 55%, 52%);
+  display: flex;
+  grid-column: 1 / 8;
   margin-left: 10px;
   margin-top: 15px;
   margin: 10px 0 -4px 10px;
+  padding-left: 5px;
 }
 .second-text {
-  display: flex;
   align-items: center;
   border-radius: 10px 10px 10px 4px;
-  grid-column: 1 / 8;
-  color: hsl(276, 55%, 52%);
   background-color: rgb(237, 228, 245);
   border-radius: 13px;
-  padding-left: 5px;
+  color: hsl(276, 55%, 52%);
+  display: flex;
+  grid-column: 1 / 8;
   margin-left: 10px;
+  padding-left: 5px;
 }
 .dog-images {
+  border-radius: 13px;
+  display: flex;
   grid-column: 5 / 13;
   grid-row: 4 /5;
-  display: flex;
   justify-content: space-evenly;
-  border-radius: 13px;
   margin-right: 12px;
 }
 img {
   border-radius: 13px;
 }
 .third-text {
-  grid-column: 5 / 13;
   background-color: hsl(0, 0%, 100%);
+  border-radius: 10px 10px 4px 10px;
   display: flex;
-  align-items: center;
+  grid-column: 5 / 13;
   justify-content: flex-end;
+  margin-right: 10px;
   padding-right: 12px;
   padding-left: 12px;
-  margin-right: 10px;
-  border-radius: 10px 10px 4px 10px;
 }
 .fourth-text {
-  grid-column: 7 / 13;
-  background-color: hsl(0, 0%, 100%);
-  display: flex;
-  padding-right: 12px;
   align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px 10px 4px 10px;
+  display: flex;
+  grid-column: 7 / 13;
   justify-content: flex-end;
+  margin-right: 10px;
   padding-right: 12px;
   padding-left: 12px;
-  margin-right: 10px;
-  border-radius: 10px 10px 4px 10px;
+  padding-right: 12px;
 }
 .fifth-text {
-  border-radius: 10px 10px 10px 4px;
-  padding-left: 12px;
-  grid-column: 1 / 9;
-  color: hsl(276, 55%, 52%);
-  background-color: rgb(237, 228, 245);
-  margin-left: 10px;
-  display: flex;
   align-items: center;
+  border-radius: 10px 10px 10px 4px;
+  background-color: rgb(237, 228, 245);
+  color: hsl(276, 55%, 52%);
+  display: flex;
+  grid-column: 1 / 9;
+  padding-left: 12px;
+  margin-left: 10px;
 }
 .walk-text {
-  grid-column: 1 / 10;
-  display: flex;
   align-items: center;
   background: rgb(244, 141, 236);
   background: linear-gradient(
@@ -183,16 +181,16 @@ img {
     rgba(233, 66, 255, 1) 20%,
     rgba(136, 56, 255, 1) 92%
   );
-  margin-left: 10px;
-  color: white;
   border-radius: 10px 10px 10px 3px;
+  color: white;
+  display: flex;
+  grid-column: 1 / 10;
+  margin-left: 10px;
 }
 .walk-text div {
   margin-left: 5px;
 }
 .walk-text2 {
-  grid-column: 1 / 10;
-  display: flex;
   align-items: center;
   background: rgb(244, 141, 236);
   background: linear-gradient(
@@ -200,60 +198,62 @@ img {
     rgba(233, 66, 255, 1) 20%,
     rgba(136, 56, 255, 1) 92%
   );
-  margin-left: 10px;
-  color: white;
   border-radius: 10px 10px 10px 3px;
+  color: white;
+  display: flex;
+  grid-column: 1 / 10;
+  margin-left: 10px;
 }
 .walk-text2 div {
   margin-left: 5px;
 }
 input[type="radio"] {
-  -webkit-appearance: none;
   appearance: none;
-  margin: 0;
-  font: inherit;
-  color: currentColor;
-  width: 1.7em;
-  height: 1.7em;
   border: 0.15em dotted currentColor;
   border-radius: 50%;
-  transform: translateY(-0.075em);
+  color: currentColor;
+  height: 1.7em;
+  font: inherit;
   margin-left: 8px;
+  margin: 0;
+  transform: translateY(-0.075em);
+  width: 1.7em;
+  -webkit-appearance: none;
 }
 
 .type-text {
-  grid-column: 1 / 13;
+  align-items: center;
   background-color: white;
+  border-radius: 15px;
+  color: hsl(270, 7%, 64%);
+  display: flex;
+  grid-column: 1 / 13;
+  justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
   position: relative;
-  color: hsl(270, 7%, 64%);
 }
 .price1 {
-  margin-left: 40px;
   font-size: 1.5em;
   font-weight: 800;
+  margin-left: 40px;
 }
 .price2 {
-  margin-left: 66px;
   font-size: 1.5em;
   font-weight: 800;
+  margin-left: 66px;
 }
 .submit {
   background-color: hsl(271, 36%, 24%);
-  height: 30px;
-  width: 30px;
   border-radius: 20px;
+  height: 30px;
   margin-left: 130px;
+  width: 30px;
 }
 .bi-chevron-right {
   color: white;
+  font-weight: bold;
   position: absolute;
   right: 15px;
-  font-weight: bold;
 }

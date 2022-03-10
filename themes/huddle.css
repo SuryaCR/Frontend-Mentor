@@ -4,14 +4,14 @@
 }
 
 :root {
-  --poppins: "Poppins", sans-serif;
-  --open-sans: "Open Sans", sans-serif;
-  --pink: hsl(322, 100%, 66%);
   --light-pink: hsl(321, 100%, 78%);
   --light-red: hsl(0, 100%, 63%);
+  --open-sans: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --pink: hsl(322, 100%, 66%);
+  --padding-container: 80px 0;
   --very-dark-cyan: hsl(192, 100%, 9%);
   --very-pale-blue: hsl(207, 100%, 98%);
-  --padding-container: 80px 0;
 }
 
 body {
@@ -19,11 +19,11 @@ body {
 }
 
 .container {
-  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
   padding: var(--padding-container);
+  width: 90%;
 }
 
 
@@ -34,35 +34,35 @@ body {
 }
 
 .hero__nav {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   --padding-container: 60px 0 45px;
 }
 
 .hero__logo {
-  width: 45%;
   max-width: 160px;
+  width: 45%;
 }
 
 .hero__huddle {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 .hero__cta {
-  color: var(--light-pink);
-  text-decoration: none;
   border: 2px solid;
-  padding: 6px 16px;
   border-radius: 30px;
-  font-weight: 600;
   box-shadow: 0 0 1px;
+  color: var(--light-pink);
+  font-weight: 600;
+  padding: 6px 16px;
+  text-decoration: none;
 }
 
 .hero__main {
-  text-align: center;
   color: var(--very-dark-cyan);
+  text-align: center;
 }
 
 .hero__title {
@@ -76,14 +76,14 @@ body {
 }
 
 .cta {
-  display: inline-block;
   background-color: var(--pink);
-  color: #fff;
-  text-decoration: none;
-  padding: 16px 30px;
   border-radius: 30px;
-  margin-top: 16px;
+  color: #fff;
+  display: inline-block;
   font-weight: 600;
+  padding: 16px 30px;
+  margin-top: 16px;
+  text-decoration: none;
 }
 
 .hero__picture {
@@ -91,19 +91,19 @@ body {
 }
 
 .hero__img {
-  width: 100%;
+  display: block;
   max-width: 600px;
   margin: 0 auto;
-  display: block;
+  width: 100%;
 }
 
 .hero__numbers {
-  display: flex;
-  margin-top: 80px;
-  flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  display: flex;
   gap: 60px;
+  flex-direction: column;
+  margin-top: 80px;
+  padding-bottom: 100px;
 }
 
 .hero__items {
@@ -119,23 +119,23 @@ body {
 }
 
 .wave {
-  position: absolute;
   background-size: 100% 100px;
   background-repeat: no-repeat;
   height: 100px;
+  position: absolute;
   width: 100%;
 }
 
 .wave--bottom {
-  left: 0;
   bottom: 0;
   background-image: var(--wave-bottom);
+  left: 0;
 }
 
 .wave--top {
+  background-image: var(--wave-top);
   left: 0;
   top: 0;
-  background-image: var(--wave-top);
 }
 
 .section {
@@ -157,10 +157,10 @@ body {
 }
 
 .section__img {
-  width: 100%;
-  max-width: 350px;
   display: block;
+  max-width: 350px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .section__texts {
@@ -169,8 +169,8 @@ body {
 }
 
 .subtitle {
-  margin-bottom: 16px;
   font-family: var(--poppins);
+  margin-bottom: 16px;
 }
 
 .question {
@@ -187,10 +187,10 @@ body {
 }
 
 .footer__title {
-  text-transform: uppercase;
+  font-family: var(--poppins);
   letter-spacing: 2px;
   margin-bottom: 16px;
-  font-family: var(--poppins);
+  text-transform: uppercase;
 }
 
 .footer__paragraph {
@@ -205,28 +205,28 @@ body {
 }
 
 .footer__input {
+  border-radius: 3px;
+  border: none;
   flex-basis: 100%;
   flex-grow: 1;
   font-size: 16px;
   font-family: var(--open-sans);
-  border: none;
-  outline: none;
-  border-radius: 3px;
-  padding: 16px 6px;
   margin-bottom: 20px;
+  outline: none;
+  padding: 16px 6px;
 }
 
 .footer__cta {
-  font-size: 16px;
-  font-family: var(--open-sans);
   background-color: var(--pink);
   border: none;
+  border-radius: 4px;
   color: #fff;
   font-weight: 600;
-  text-decoration: none;
-  padding: 10px 40px;
-  border-radius: 4px;
+  font-size: 16px;
+  font-family: var(--open-sans);
   margin-left: auto;
+  padding: 10px 40px;
+  text-decoration: none;
 }
 
 .footer__contact {
@@ -244,8 +244,8 @@ body {
 
 .footer__social {
   display: flex;
-  justify-content: center;
   gap: 16px;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -255,6 +255,6 @@ body {
 }
 
 .footer__icon {
-  width: 100%;
   display: block;
+  width: 100%;
 }
