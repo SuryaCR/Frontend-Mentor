@@ -10,28 +10,24 @@ form.addEventListener('submit', event => {
 });
 
 const fName = document.getElementById('fname');
-const fNameError = document.querySelector('.first-name .error');
-const fNameErrorImg = document.querySelector('.first-name .wrapper-errorimg');
+const fNameErrorImg = document.querySelector('.wrapper-errorimg');
 
 const lName = document.getElementById('lname');
-const lNameError = document.querySelector('.last-name .error');
-const lNameErrorImg = document.querySelector('.last-name .wrapper-errorimg');
+const lNameErrorImg = document.querySelector('.wrapper-errorimg');
 
 
 const email = document.getElementById('email');
-const emailError = document.querySelector('.email .error');
-const emailErrorImg = document.querySelector('.email .wrapper-errorimg');
+const emailErrorImg = document.querySelector('.wrapper-errorimg');
 
 
 const password = document.getElementById('password');
-const passwordError = document.querySelector('.password .error');
-const passwordErrorImg = document.querySelector('.password .wrapper-errorimg');
+const passwordErrorImg = document.querySelector('.wrapper-errorimg');
 
 function showError() {
 
     if (!fName.validity.valid) {
         if (fName.validity.valueMissing) {
-            fNameError.textContent = 'First Name cannot be empty';
+            alert('First Name cannot be empty');
         }
         fNameError.classList.toggle('active', true);
         fNameErrorImg.classList.toggle('active', true);
@@ -40,7 +36,7 @@ function showError() {
 
     if (!lName.validity.valid) {
         if (lName.validity.valueMissing) {
-            lNameError.textContent = 'Last Name cannot be empty';
+            alert('Last Name cannot be empty');
         }
         lNameError.classList.toggle('active', true);
         lNameErrorImg.classList.toggle('active', true);
@@ -49,9 +45,9 @@ function showError() {
 
     if (!email.validity.valid) {
         if (email.validity.valueMissing) {
-            emailError.textContent = 'Email cannot be empty';
+            alert('Email cannot be empty');
         } else if (email.validity.typeMismatch) {
-            emailError.textContent = 'Email is not valid';
+            alert('Email is not valid');
         }
         emailError.classList.toggle('active', true);
         emailErrorImg.classList.toggle('active', true);
@@ -60,7 +56,7 @@ function showError() {
 
     if (!password.validity.valid) {
         if (password.validity.valueMissing) {
-            passwordError.textContent = 'Password cannot be empty';
+            alert('Password cannot be empty');
         }
         passwordError.classList.toggle('active', true);
         passwordErrorImg.classList.toggle('active', true);
