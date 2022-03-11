@@ -1,0 +1,25 @@
+table {
+    margin: auto;
+    float: left;
+    margin-left: 400px;
+  }
+  table,
+  th,
+  td {
+    border: 2px solid antiquewhite;
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: antiquewhite;
+  }
+  body {
+    background-image: url("https://inspirationfeed.com/wp-content/uploads/2016/08/mobile_wallpaper_by_maria_shanina-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    margin-top: 100px;
+  }
