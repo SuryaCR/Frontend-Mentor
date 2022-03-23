@@ -1,4 +1,3 @@
-/* eslint-disable eqeqeq */
 const myCheckbox = document.querySelector('.switch input')
 const duration = document.querySelector('.month')
 const price = document.querySelector('.price .pricefix')
@@ -7,12 +6,12 @@ const range = document.querySelector('.myrange')
 
 switcher.onclick = function () {
   if (myCheckbox.checked == true) {
-    const priceInt = parseInt(price.textContent)
-    price.textContent = `${(priceInt - (priceInt * 0.25)) * 12}`
-    duration.textContent = '/year'
+    const priceInt = parseInt(price.innerText)
+    price.innerText = `${(priceInt - (priceInt * 0.25)) * 12}`
+    duration.innerText = '/year'
   } else {
     refreshPrices()
-    duration.textContent = '/month'
+    duration.innerText = '/month'
   }
 }
 
@@ -22,51 +21,52 @@ range.addEventListener('input', refreshPrices)
 function refreshPrices () {
   if (range.value == 1) {
     if (myCheckbox.checked == true) {
-      price.textContent = `${(8 - (8 * 0.25)) * 12}`
+      price.innerText = 72
     } else {
-      price.textContent = 8
+      price.innerText = 8
     }
 
-    pageViews.textContent = '10k'
+    pageViews.innerText = '10k'
   }
 
   if (range.value == 2) {
     if (myCheckbox.checked == true) {
-      price.textContent = 108
+      price.innerText = 108
     } else {
-      price.textContent = 12
+      price.innerText = 12
     }
 
-    pageViews.textContent = '50k'
+    pageViews.innerText = '50k'
   }
 
   if (range.value == 3) {
     if (myCheckbox.checked == true) {
-      price.textContent = 144
+      price.innerText = 144
     } else {
-      price.textContent = 16
+      price.innerText = 16
     }
 
-    pageViews.textContent = '100k'
+    pageViews.innerText = '100k'
   }
 
   if (range.value == 4) {
     if (myCheckbox.checked == true) {
-      price.textContent = 216
+      price.innerText = 216
     } else {
-      price.textContent = 24
+      price.innerText = 24
     }
 
-    pageViews.textContent = '500k'
+    pageViews.innerText = '500k'
   }
+
 
   if (range.value == 5) {
     if (myCheckbox.checked == true) {
-      price.textContent = 324
+      price.innerText = 324
     } else {
-      price.textContent = 36
+      price.innerText = 36
     }
 
-    pageViews.textContent = '1M'
+    pageViews.innerText = '1M'
   }
 }

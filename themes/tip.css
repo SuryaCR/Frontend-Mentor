@@ -1,279 +1,230 @@
 :root {
-    --color1: hsl(172, 67%, 45%);
-    --color2: hsl(183, 100%, 15%);
-    --color3: hsl(186, 14%, 43%);
-    --color4: hsl(184, 14%, 56%);
-    --color5: hsl(185, 41%, 84%);
-    --color6: hsl(189, 41%, 97%);
-    --color7: hsl(0, 0%, 100%);
+  --color1: hsl(172, 67%, 45%);
+  --color2: hsl(183, 100%, 15%);
+  --color3: hsl(186, 14%, 43%);
+  --color4: hsl(184, 14%, 56%);
+  --color5: hsl(185, 41%, 84%);
+  --color6: hsl(189, 41%, 97%);
+  --color7: hsl(0, 0%, 100%);
   }
-  
-  * {
-    padding: 0;
-    margin: 0;
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-  
-  body {
+body {
     background-color: var(--color5);
   }
-  
-  .logo {
+.logo {
     position: relative;
     top: 8vh;
   }
-  
-  header {
+header {
     display: flex;
     justify-content: center;
   }
-  
-  main {
+main {
+    display: flex;
+    justify-content: center;
     margin-top: 13vh;
-    display: flex;
-    justify-content: center;
   }
-  
-  .div_main_container {
-    border-radius: 12px;
+.div_main_container {
     background-color: var(--color7);
+    border-radius: 12px;
     display: flex;
+    min-height: auto;
+    min-height: auto;
     padding: 3vh;
-    min-height: auto;
-    min-height: auto;
   }
-  
-  .div_one_container {
-    border: 2px solid rgb(230, 230, 230);
-    width: 100%;
-    padding: 2vh;
-    margin-right: 1vh;
+.div_one_container {
     border-radius: 13px;
+    border: 2px solid rgb(230, 230, 230);
+    margin-right: 1vh;
+    padding: 2vh;
+    width: 100%;
   }
-  
-  .div_number_bill {
-    margin: 2vh;
+.div_number_bill {
     font-family: "Piazzolla", serif;
+    margin: 2vh;
   }
-  
-  .imput_bill {
-    height: 5.5vh;
-    width: 350px;
-    min-height: auto;
+.imput_bill {
     background-color: var(--color6);
-    border: none;
     border-radius: 7px;
     border: 1px solid rgb(230, 230, 230);
+    border: none;
+    height: 5.5vh;
+    min-height: auto;
+    width: 350px;
   }
-  
-  .p_select_tip {
-    margin: 2vh;
+.p_select_tip {
     font-family: "Piazzolla", serif;
+    margin: 2vh;
   }
-  
-  .percentage_tip {
-    margin: 1vh;
+.percentage_tip {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    min-height: auto;
     height: 20vh;
+    margin: 1vh;
+    min-height: auto;
   }
-  
-  .percentage_tip button {
+.percentage_tip button {
+    background-color: var(--color2);
+    border-radius: 15px;
+    border: none;
+    color: var(--color7);
+    height: 6vh;
     margin: 1vh;
     width: 14vh;
-    height: 6vh;
-    border-radius: 15px;
-    background-color: var(--color2);
-    color: var(--color7);
-    border: none;
   }
-  .percentage_tip button:active {
+.percentage_tip button:active {
     background-color: rgb(250, 218, 150);
     color: black;
   }
-  
-  .percentage_tip .customTips {
+.percentage_tip .customTips {
+    background-color: var(--color6);
+    border-radius: 15px;
+    border: none;
+    height: 6vh;
     margin: 1vh;
     width: 14vh;
-    height: 6vh;
-    border-radius: 15px;
-    background-color: var(--color6);
-    border: none;
   }
-  
-  .perceTips {
+.perceTips {
     font-family: "Piazzolla", serif;
     font-size: 23px;
     font-weight: bold;
     width: 100%;
   }
-  
-  .people_tips {
-    margin: 2vh;
+.people_tips {
     font-family: "Piazzolla", serif;
+    margin: 2vh;
   }
-  
-  .people_tips p {
+.people_tips p {
     color: rgb(0, 0, 0);
     padding-bottom: 1vh;
   }
-  
-  .people_tips .input_people {
-    height: 5.5vh;
-    width: 350px;
-    min-height: auto;
+.people_tips .input_people {
     background-color: var(--color6);
-    border: none;
     border-radius: 7px;
     border: 1px solid rgb(230, 230, 230);
+    border: none;
+    height: 5.5vh;
+    min-height: auto;
+    width: 350px;
   }
-  
-  .div_two_container {
+.div_two_container {
     background-color: var(--color2);
-    padding: 2vh;
+    border-radius: 13px;
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(1, auto);
-    border-radius: 13px;
+    padding: 2vh;
   }
-  
-  .div_two_tips {
+.div_two_tips {
     display: grid;
     grid-template-columns: repeat(3, auto);
   }
-  
-  .container_tips {
-    grid-column: 3 / 4;
+.container_tips {
     font-family: "Piazzolla", serif;
+    grid-column: 3 / 4;
   }
-  
-  .container_tips {
-    margin: 2vh;
-    font-size: 40px;
+.container_tips {
     color: var(--color5);
+    font-size: 40px;
+    margin: 2vh;
   }
-  .container_tips div:last-child {
+.container_tips div:last-child {
     margin-top: 9.5vh;
   }
-  
-  .total_people {
-    grid-column: 1 / 3;
+.total_people {
     font-family: "Piazzolla", serif;
     font-size: 23px;
+    grid-column: 1 / 3;
     margin-top: 17px;
   }
-  
-  .total_people_two {
+.total_people_two {
     margin-top: 3vh;
   }
-  
-  .total_people p {
-    margin-top: 2vh;
-    margin-left: 2vh;
+.total_people p {
     color: var(--color7);
-  }
-  
-  .total_people span {
-    margin-top: 2vh;
     margin-left: 2vh;
+    margin-top: 2vh;
+  }
+.total_people span {
+    color: var(--color7);
     font-size: 13px;
-    color: var(--color7);
+    margin-left: 2vh;
+    margin-top: 2vh;
   }
-  
-  .buttom_reset {
-    width: 100%;
+.buttom_reset {
     color: var(--color7);
-    font-size: 25px;
     font-family: sans-serif;
-  }
-  
-  .div_reset_buttom .buttom_reset {
+    font-size: 25px;
     width: 100%;
-    height: 50%;
+  }
+.div_reset_buttom .buttom_reset {
+    background-color: var(--color3);
     border-radius: 15px;
     border: none;
-    background-color: var(--color3);
+    height: 50%;
     margin-top: 9vh;
+    width: 100%;
   }
-  
-  .buttom_reset:active {
+.buttom_reset:active {
     background-color: rgb(250, 218, 150);
     color: black;
   }
-  
-  .billError {
-    display: none;
-    color: red;
-    font-size: 12px;
-    font-family: sans-serif;
-  }
-  
-  .peopleError {
-    display: none;
-    color: red;
-    font-size: 12px;
-    font-family: sans-serif;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .div_main_container {
+@media screen and (max-width: 800px) {
+    div:first-child {
+      margin-top: 3vh;
+    }
+    div:last-child {
+      margin-top: 8vh;
+    }
+
+  .div_main_container {
       display: flex;
       flex-direction: column;
       width: 95%;
     }
-  
-    .div_number_bill {
-      width: 100%;
+  .div_number_bill {
       margin: 0;
       padding: 0;
-    }
-  
-    .imput_bill {
       width: 100%;
     }
-    .percentage_tip {
+  .imput_bill {
       width: 100%;
+    }
+  .percentage_tip {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
       height: 50%;
       margin: 0;
       padding: 0;
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-    }
-  
-    .people_tips {
       width: 100%;
+    }
+  .people_tips {
       margin: 0;
       padding: 0;
-    }
-    .div_two_container {
       width: 100%;
     }
-    .people_tips .input_people {
+  .div_two_container {
       width: 100%;
     }
-  
-    .div_two_tips {
+  .people_tips .input_people {
+      width: 100%;
+    }
+  .div_two_tips {
       display: flex;
       margin: 0;
       padding: 0;
     }
-  
-    .div_reset_buttom .buttom_reset {
-      height: 35px;
+  .div_reset_buttom .buttom_reset {
       border-radius: 0px;
+      height: 35px;
       margin-top: 1.5vh;
     }
-  
-    .percentage_tip {
+  .percentage_tip {
       width: 100%;
     }
-  
-    .container_tips div:first-child {
-      margin-top: 3vh;
-    }
-  
-    .container_tips div:last-child {
-      margin-top: 8vh;
-    }
+
   }

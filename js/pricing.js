@@ -5,12 +5,12 @@ const masterEl = document.querySelector('#master')
 
 toggle.addEventListener('click', (e) => {
   if (!e.target.checked) {
-    basicEl.textContent = '199.99'
-    professionalEl.textContent = '249.99'
-    masterEl.textContent = '399.99'
+    basicEl.innertext = '199.99'
+    professionalEl.innertext = '249.99'
+    masterEl.innertext = '399.99'
   } else {
-    basicEl.textContent = '19.99'
-    professionalEl.textContent = '24.99'
-    masterEl.textContent = '39.99'
+    basicEl.innertext = '19.99'
+    professionalEl.innertext = '24.99'
+    masterEl.innertext = '39.99'
   }
 })
