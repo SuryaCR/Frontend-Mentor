@@ -1,162 +1,140 @@
 :root {
-  --fs: 12px;
+  --divider-color: hsl(240, 5%, 91%);
   --ff: "Kumbh Sans", sans-serif;
-  --fw-regular: 400;
+  --fs: 12px;
   --fw-bold: 700;
+  --fw-regular: 400;
 
   --txt-color-1: hsl(238, 29%, 16%);
   --txt-color-2: hsl(14, 88%, 65%);
   --txt-color-3: hsl(237, 12%, 33%);
   --txt-color-4: hsl(240, 6%, 50%);
-
-  --divider-color: hsl(240, 5%, 91%);
-
   --bg-color-1: hsl(273, 75%, 66%);
   --bg-color-2: hsl(240, 73%, 65%);
 }
-
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+  align-items: center;
   background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  color: var(--txt-color-1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: var(--ff);
-  color: var(--txt-color-1);
   font-weight: var(--fw-regular);
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
 }
-
 .card {
-  margin-top: 7.5rem;
-  width: 90%;
   background-color: #fff;
   border-radius: 20px;
+  margin-top: 7.5rem;
+  width: 90%;
 }
-
 .content {
-  padding-top: calc(1 / 2rem);
   padding-bottom: 2rem;
+  padding-top: calc(1 / 2rem);
   text-align: left;
 }
-
 h1 {
   text-align: center;
 }
-
 .accordion {
   background-color: #fff;
-  cursor: pointer;
-  transition: 0.5s;
   border: none;
-  padding: 0.75rem 1.5rem;
+  color: var(--txt-color-1);
+  cursor: pointer;
   font-family: var(--ff);
   font-size: 0.8rem;
-  color: var(--txt-color-1);
+  padding: 0.75rem 1.5rem;
+  transition: 0.5s;
 }
-
 .active {
   font-weight: bold;
 }
-
 .panel {
-  font-size: var(--fs);
   color: var(--txt-color-4);
-  overflow: hidden;
+  font-size: var(--fs);
+  justify-content: center;
   max-height: 0;
+  overflow: hidden;
   padding: 0 1.5rem;
   transition: max-height 0.2s ease-out;
-  justify-content: center;
 }
-
 hr {
-  width: 85%;
   border: 1px solid var(--divider-color);
+  width: 85%;
 }
-
 .attribution {
-  margin-top: 2rem;
-  font-size: 11px;
   color: var(--divider-color);
-  text-align: center;
+  font-size: 11px;
+  margin-top: 2rem;
   position: relative;
+  text-align: center;
   width: 100%;
 }
 .attribution a {
   color: #f47b56;
   text-decoration: none;
 }
-
 @media (min-width: 1100px) {
   .card {
-    margin: 0;
-    margin-top: 2rem;
-    width: 900px;
+    align-items: center;
     display: flex;
     gap: 2rem;
-    align-items: center;
+    margin-top: 2rem;
+    margin: 0;
+    width: 900px;
   }
-
   .desktop-img-3 {
     display: block;
+    left: 95px;
     position: absolute;
     top: 270px;
-    left: 95px;
     z-index: 1;
   }
-
   .desktop-img {
     display: inline-block;
+    left: 120px;
     position: absolute;
     top: 140px;
-    left: 120px;
     z-index: 0;
   }
-
   .desktop-img-2 {
     display: inline-block;
-    position: absolute;
-    width: 420px;
-    top: 140px;
     left: 120px;
+    position: absolute;
+    top: 140px;
+    width: 420px;
     z-index: 0;
   }
-
   .desktop-img-container {
     flex: 1;
     position: relative;
-    top: -335px;
     right: 200px;
+    top: -335px;
   }
-
   .content {
     flex: 1;
-    padding-top: 3rem;
     padding-bottom: 4rem;
+    padding-top: 3rem;
   }
-
   h1 {
     text-align: left;
   }
-
   .accordion {
-    padding: 1rem 0;
     font-size: 1rem;
+    padding: 1rem 0;
   }
-
   .panel {
     padding-left: 0;
     padding-right: 4rem;
   }
-
   hr {
     margin-right: 4rem;
   }
