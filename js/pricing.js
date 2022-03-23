@@ -1,16 +1,16 @@
 const toggle = document.querySelector('.switch input')
-const basicEl = document.querySelector('#basic')
-const professionalEl = document.querySelector('#professional')
-const masterEl = document.querySelector('#master')
+const basic = document.querySelector('#basic')
+const professional = document.querySelector('#professional')
+const master = document.querySelector('#master')
 
 toggle.addEventListener('click', (e) => {
   if (!e.target.checked) {
-    basicEl.innertext = '199.99'
-    professionalEl.innertext = '249.99'
-    masterEl.innertext = '399.99'
+    basic.innerText = '199.99'
+    professional.innerText = '249.99'
+    master.innerText = '399.99'
   } else {
-    basicEl.innertext = '19.99'
-    professionalEl.innertext = '24.99'
-    masterEl.innertext = '39.99'
+    basic.innerText = '19.99'
+    professional.innerText = '24.99'
+    master.innerText = '39.99'
   }
 })

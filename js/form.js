@@ -1,4 +1,11 @@
 const form = document.getElementsByTagName("form")[0];
+const fName = document.getElementById("fname");
+
+const lName = document.getElementById("lname");
+
+const email = document.getElementById("email");
+
+const password = document.getElementById("password");
 
 form.setAttribute("novalidate", "");
 
@@ -13,14 +20,6 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
   }
 });
-
-const fName = document.getElementById("fname");
-
-const lName = document.getElementById("lname");
-
-const email = document.getElementById("email");
-
-const password = document.getElementById("password");
 
 function showError() {
   if (!fName.validity.valid) {

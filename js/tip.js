@@ -12,17 +12,16 @@ const tip25 = document.getElementById("tip25");
 const tip50 = document.getElementById("tip50");
 const reset = document.getElementById("reset");
 const inpPeople = document.getElementById("inpPeople");
-const customTips = document.getElementById("custom");
 
 function calculateTip(tip5, tip10, tip15, tip25, tip50, reset) {
   const d = document;
   d.addEventListener("click", (e) => {
     if (e.target.matches(tip5)) {
       if (bill.value && inpPeople.value) {
-        const resultado = (bill.value * 5) / 100;
-        const resultado2 = resultado;
+        const resultado = (bill.value * 5) / 100;//28
+        const resultado2 = resultado;//28
         const a = parseInt(resultado);
-        const b = parseInt(resultado2) / inpPeople.value;
+        const b = parseInt(resultado2) / inpPeople.value; 
 
         document.querySelector(".textDiv").innerHTML = a + ".00";
         document.querySelector(".secondTextDiv").innerHTML = b + ".00";
